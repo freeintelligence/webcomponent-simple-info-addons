@@ -1,6 +1,6 @@
 {
   "name": "webcomponent-simple-info-addons",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Stencil Component Starter",
   "module": "dist/esm/index.js",
   "main": "dist/index.js",

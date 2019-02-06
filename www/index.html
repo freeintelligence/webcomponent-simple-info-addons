@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html dir="ltr" lang="en">
-<head>
+<!DOCTYPE html><html dir="ltr" lang="en"><head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
   <title>Stencil Component Starter</title>
@@ -10,8 +8,8 @@
 
   <link rel="import" href="https://unpkg.com/syntax-highlight@1.0.0/syntax-highlight.html">
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/1.0.22/webcomponents-lite.js"></script>
-  <link rel="stylesheet" href="https://unpkg.com/@smarthtmlelements/smart-core@1.1.0/source/styles/smart.base.css" type="text/css" />
-  <link rel="stylesheet" href="https://unpkg.com/@smarthtmlelements/smart-core@1.1.0/source/styles/smart.material-dark.css" type="text/css" />
+  <link rel="stylesheet" href="https://unpkg.com/@smarthtmlelements/smart-core@1.1.0/source/styles/smart.base.css" type="text/css">
+  <link rel="stylesheet" href="https://unpkg.com/@smarthtmlelements/smart-core@1.1.0/source/styles/smart.material-dark.css" type="text/css">
   <script type="text/javascript" src="https://unpkg.com/@smarthtmlelements/smart-core@1.1.0/source/smart.element.js"></script>
   <script type="text/javascript" src="https://unpkg.com/@smarthtmlelements/smart-core@1.1.0/source/smart.elements.js"></script>
 
@@ -46,7 +44,7 @@
 
   <div class="container">
     <smart-tabs class="material-dark">
-      <smart-tab-item label="Simple paragraph" selected>
+      <smart-tab-item label="Simple paragraph" selected="">
         <div class="tab-content">
           <simple-paragraph header="Título" message="Apresúrate!" mode="info"></simple-paragraph>
           <syntax-highlight theme="monokai" lang="html">
@@ -90,5 +88,18 @@
     </smart-tabs>
   </div>
 
-</body>
-</html>
+
+  <script>
+    if ('serviceWorker' in navigator && location.protocol !== 'file:') {
+      // auto-unregister service worker during dev mode
+      navigator.serviceWorker.getRegistration().then(function(registration) {
+        if (registration) {
+          registration.unregister().then(function() { location.reload(true) });
+        }
+      });
+    }
+  </script>
+
+
+
+</body></html>
