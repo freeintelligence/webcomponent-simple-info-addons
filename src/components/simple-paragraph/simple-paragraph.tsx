@@ -15,30 +15,33 @@ export class SimpleParagraph {
   /**
    * Mode (styles)
    */
-  @Prop() mode: string
+  @Prop() mode: string = 'info'
 
   /**
-   * Generate class attribute
+   * Width
    */
-  classAttribute() {
-    let clss = [ 'simple-paragraph' ]
-    
-    if(typeof this.mode == 'string') {
-      clss.push(`mode-${this.mode}`)
-    }
+  @Prop() width: string = '100%'
 
-    return clss.join(' ')
+  /**
+   * Host data
+   */
+  hostData() {
+    let data = {}
+    
+    data['class'] = {}
+    data['class'][`mode-${this.mode}`] = true
+    
+    data['style'] = {}
+    data['style']['width'] = this.width
+
+    return data
   }
 
   /**
    * Html
    */
   render() {
-    return (
-      <div class={this.classAttribute()}>
-        <p>{this.message}</p>
-      </div>
-    )
+    return <p>{this.message}</p>
   }
 
 }

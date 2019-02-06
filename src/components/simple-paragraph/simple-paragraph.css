@@ -1,16 +1,20 @@
-simple-paragraph .simple-paragraph {
+simple-paragraph {
+    box-sizing:border-box;
+    display:inline-block;
     margin:12px 0;
     -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
     -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
 }
-simple-paragraph .simple-paragraph p {
+simple-paragraph p {
+    box-sizing:border-box;
+    width:100%;
     margin:0;
     padding:12px 18px;
 }
 
-simple-paragraph .simple-paragraph.mode-info { border-left:6px rgb(65, 163, 202) solid; }
-simple-paragraph .simple-paragraph.mode-success { border-left:6px rgb(0, 179, 80) solid; }
-simple-paragraph .simple-paragraph.mode-dark { border-left:6px rgb(0, 71, 99) solid; }
-simple-paragraph .simple-paragraph.mode-warning { border-left:6px rgb(185, 136, 0) solid; }
-simple-paragraph .simple-paragraph.mode-danger { border-left:6px rgb(216, 79, 0) solid; }
+simple-paragraph.mode-info { border-left:6px rgb(65, 163, 202) solid; }
+simple-paragraph.mode-success { border-left:6px rgb(0, 179, 80) solid; }
+simple-paragraph.mode-dark { border-left:6px rgb(0, 71, 99) solid; }
+simple-paragraph.mode-warning { border-left:6px rgb(185, 136, 0) solid; }
+simple-paragraph.mode-danger { border-left:6px rgb(216, 79, 0) solid; }

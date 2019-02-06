@@ -42,6 +42,10 @@ export namespace Components {
     * Mode (styles)
     */
     'mode': string;
+    /**
+    * Width
+    */
+    'width': string;
   }
   interface SimpleParagraphAttributes extends StencilHTMLAttributes {
     /**
@@ -52,6 +56,10 @@ export namespace Components {
     * Mode (styles)
     */
     'mode'?: string;
+    /**
+    * Width
+    */
+    'width'?: string;
   }
 }
 

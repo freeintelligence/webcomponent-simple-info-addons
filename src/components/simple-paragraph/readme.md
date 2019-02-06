@@ -7,10 +7,11 @@
 
 ## Properties
 
-| Property      | Attribute     | Description                   | Type     | Default     |
-| ------------- | ------------- | ----------------------------- | -------- | ----------- |
-| `description` | `description` | Description for the component | `string` | `undefined` |
-| `header`      | `header`      | Title for the component       | `string` | `undefined` |
+| Property  | Attribute | Description               | Type     | Default     |
+| --------- | --------- | ------------------------- | -------- | ----------- |
+| `message` | `message` | Message for the component | `string` | `undefined` |
+| `mode`    | `mode`    | Mode (styles)             | `string` | `'info'`    |
+| `width`   | `width`   | Width                     | `string` | `'100%'`    |
 
 
 ----------------------------------------------
