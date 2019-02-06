@@ -14,6 +14,10 @@ export namespace Components {
 
   interface SimpleParagraph {
     /**
+    * Header for the component
+    */
+    'header': string;
+    /**
     * Message for the component
     */
     'message': string;
@@ -27,6 +31,10 @@ export namespace Components {
     'width': string;
   }
   interface SimpleParagraphAttributes extends StencilHTMLAttributes {
+    /**
+    * Header for the component
+    */
+    'header'?: string;
     /**
     * Message for the component
     */

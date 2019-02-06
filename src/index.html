@@ -4,12 +4,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
   <title>Stencil Component Starter</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+
   <script src="/build/webcomponent-simple-info-addons.js"></script>
 
   <style>
     body {
       margin:0;
       padding:0;
+      background-color:#eee;
+      font-family: 'Open Sans', sans-serif;
     }
     .margin {
       margin:0 12px;
@@ -25,11 +29,11 @@
   <h1>Simple paragraph</h1>
   <hr>
   <div class="margin">
-    <simple-paragraph message="Apresúrate!" mode="info"></simple-paragraph>
+    <simple-paragraph header="Título" message="Apresúrate!" mode="info"></simple-paragraph>
     <simple-paragraph message="Apresúrate!" mode="success" width="auto"></simple-paragraph>
-    <simple-paragraph message="Apresúrate!" mode="dark" width="100%"></simple-paragraph>
+    <simple-paragraph header="Título" message="Apresúrate!" mode="dark" width="100%"></simple-paragraph>
     <simple-paragraph message="Apresúrate!" mode="warning" width="412px"></simple-paragraph>
-    <simple-paragraph message="Apresúrate!" mode="danger"></simple-paragraph>
+    <simple-paragraph header="Título" message="Apresúrate!" mode="danger"></simple-paragraph>
   </div>
 
 </body>

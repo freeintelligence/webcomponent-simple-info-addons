@@ -9,6 +9,7 @@
 
 | Property  | Attribute | Description               | Type     | Default     |
 | --------- | --------- | ------------------------- | -------- | ----------- |
+| `header`  | `header`  | Header for the component  | `string` | `undefined` |
 | `message` | `message` | Message for the component | `string` | `undefined` |
 | `mode`    | `mode`    | Mode (styles)             | `string` | `'info'`    |
 | `width`   | `width`   | Width                     | `string` | `'100%'`    |

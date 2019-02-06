@@ -8,6 +8,11 @@ import { Component, Prop } from '@stencil/core'
 export class SimpleParagraph {
 
   /**
+   * Header for the component
+   */
+  @Prop() header: string
+
+  /**
    * Message for the component
    */
   @Prop() message: string
@@ -41,7 +46,12 @@ export class SimpleParagraph {
    * Html
    */
   render() {
-    return <p>{this.message}</p>
+    return (
+      <div>
+        {this.header ? <h6>{this.header}</h6> : undefined}
+        <p>{this.message}</p>
+      </div>
+    )
   }
 
 }
