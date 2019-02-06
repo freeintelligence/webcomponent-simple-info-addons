@@ -12,27 +12,6 @@ import '@stencil/core';
 
 export namespace Components {
 
-  interface SimpleCard {
-    /**
-    * Description for the component
-    */
-    'description': string;
-    /**
-    * Title for the component
-    */
-    'header': string;
-  }
-  interface SimpleCardAttributes extends StencilHTMLAttributes {
-    /**
-    * Description for the component
-    */
-    'description'?: string;
-    /**
-    * Title for the component
-    */
-    'header'?: string;
-  }
-
   interface SimpleParagraph {
     /**
     * Message for the component
@@ -65,21 +44,13 @@ export namespace Components {
 
 declare global {
   interface StencilElementInterfaces {
-    'SimpleCard': Components.SimpleCard;
     'SimpleParagraph': Components.SimpleParagraph;
   }
 
   interface StencilIntrinsicElements {
-    'simple-card': Components.SimpleCardAttributes;
     'simple-paragraph': Components.SimpleParagraphAttributes;
   }
 
-
-  interface HTMLSimpleCardElement extends Components.SimpleCard, HTMLStencilElement {}
-  var HTMLSimpleCardElement: {
-    prototype: HTMLSimpleCardElement;
-    new (): HTMLSimpleCardElement;
-  };
 
   interface HTMLSimpleParagraphElement extends Components.SimpleParagraph, HTMLStencilElement {}
   var HTMLSimpleParagraphElement: {
@@ -88,12 +59,10 @@ declare global {
   };
 
   interface HTMLElementTagNameMap {
-    'simple-card': HTMLSimpleCardElement
     'simple-paragraph': HTMLSimpleParagraphElement
   }
 
   interface ElementTagNameMap {
-    'simple-card': HTMLSimpleCardElement;
     'simple-paragraph': HTMLSimpleParagraphElement;
   }
 
