@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <title>Stencil Component Starter</title>
+  <script src="/build/webcomponent-simple-info-addons.js"></script>
+
+  <style>
+    body {
+      margin:0;
+      padding:0;
+    }
+    .margin {
+      margin:0 12px;
+    }
+
+    .additional-info {
+      border-left:solid 6px red;
+      margin:0;
+      padding:0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Simple card</h1>
+  <hr>
+  <simple-card header="Título" description="Quien robó el vídeo y porque estoy aquí?"></simple-card>
+
+  <h1>Simple paragraph</h1>
+  <hr>
+  <div class="margin">
+    <simple-paragraph message="Apresúrate Liberman!" mode="info" class="additional-info"></simple-paragraph>
+    <simple-paragraph message="Apresúrate Liberman!" mode="success"></simple-paragraph>
+    <simple-paragraph message="Apresúrate Liberman!" mode="dark"></simple-paragraph>
+    <simple-paragraph message="Apresúrate Liberman!" mode="warning"></simple-paragraph>
+    <simple-paragraph message="Apresúrate Liberman!" mode="danger"></simple-paragraph>
+  </div>
+
+</body>
+</html>
