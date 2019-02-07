@@ -2,12 +2,12 @@
   "namespace": "WebcomponentSimpleInfoAddons",
   "fsNamespace": "webcomponent-simple-info-addons",
   "loader": "../webcomponent-simple-info-addons.js",
-  "core": "webcomponent-simple-info-addons.nwi4m4bq.js",
-  "corePolyfilled": "webcomponent-simple-info-addons.lnzpmnwf.js",
+  "corePolyfilled": "es5-build-disabled.js",
+  "core": "webcomponent-simple-info-addons.core.js",
   "components": {
     "simple-paragraph": {
       "bundleIds": {
-        "$": "k05yvric"
+        "$": "simple-paragraph"
       }
     }
   }

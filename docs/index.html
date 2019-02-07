@@ -1,18 +1,105 @@
-<!DOCTYPE html><html dir="ltr" lang="en"><head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"> <title>Stencil Component Starter</title> <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet"> <script data-resources-url="/webcomponent-simple-info-addons/build/webcomponent-simple-info-addons/">!function(e,t,n,o,r,s,i,c,a,p,d,l,u,m){for(d=e[n]=e[n]||{},(l=t.createElement("style")).innerHTML="simple-paragraph{visibility:hidden}.hydrated{visibility:inherit}",l.setAttribute("data-styles",""),u=t.head.querySelector("meta[charset]"),t.head.insertBefore(l,u?u.nextSibling:t.head.firstChild),function(e,t,n){(e["s-apps"]=e["s-apps"]||[]).push("WebcomponentSimpleInfoAddons"),n.componentOnReady||(n.componentOnReady=function(){var t=this;function n(n){if(t.nodeName.indexOf("-")>0){for(var o=e["s-apps"],r=0,s=0;s<o.length;s++)if(e[o[s]].componentOnReady){if(e[o[s]].componentOnReady(t,n))return;r++}if(r<o.length)return void(e["s-cr"]=e["s-cr"]||[]).push([t,n])}n(null)}return e.Promise?new e.Promise(n):{then:n}})}(e,0,p),r=r||d.resourcesUrl,l=(u=t.querySelectorAll("script")).length-1;l>=0&&!(m=u[l]).src&&!m.hasAttribute("data-resources-url");l--);u=m.getAttribute("data-resources-url"),!r&&u&&(r=u),!r&&m.src&&(r=(u=m.src.split("/").slice(0,-1)).join("/")+(u.length?"/":"")+"webcomponent-simple-info-addons/"),l=t.createElement("script"),function(e,t,n,o){return!(t.search.indexOf("core=esm")>0)&&(!(!(t.search.indexOf("core=es5")>0||"file:"===t.protocol)&&e.customElements&&e.customElements.define&&e.fetch&&e.CSS&&e.CSS.supports&&e.CSS.supports("color","var(--c)")&&"noModule"in n)||function(e){try{return new Function('import("")'),!1}catch(e){}return!0}())}(e,e.location,l)?l.src=r+"webcomponent-simple-info-addons.lnzpmnwf.js":(l.src=r+"webcomponent-simple-info-addons.nwi4m4bq.js",l.setAttribute("type","module"),l.setAttribute("crossorigin",!0)),l.setAttribute("data-resources-url",r),l.setAttribute("data-namespace","webcomponent-simple-info-addons"),t.head.appendChild(l)}(window,document,"WebcomponentSimpleInfoAddons",0,0,0,0,0,0,HTMLElement.prototype);</script> <link rel="import" href="https://unpkg.com/syntax-highlight@1.0.0/syntax-highlight.html"> <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/1.0.22/webcomponents-lite.js"></script> <link rel="stylesheet" href="https://unpkg.com/@smarthtmlelements/smart-core@1.1.0/source/styles/smart.base.css" type="text/css"> <link rel="stylesheet" href="https://unpkg.com/@smarthtmlelements/smart-core@1.1.0/source/styles/smart.material-dark.css" type="text/css"> <script type="text/javascript" src="https://unpkg.com/@smarthtmlelements/smart-core@1.1.0/source/smart.element.js"></script> <script type="text/javascript" src="https://unpkg.com/@smarthtmlelements/smart-core@1.1.0/source/smart.elements.js"></script> <style>body,html{margin:0;padding:0;background-color:#eee;font-family:Open Sans,sans-serif;height:100%}.container{margin:0 auto;width:512px;height:100%}.container smart-tabs{width:100%;height:100%}.tab-content{padding:12px}syntax-highlight{font-size:11px;width:100%;overflow:unset}</style>
+<!DOCTYPE html><html dir="ltr" lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <title>Stencil Component Starter</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+
+  <script src="/build/webcomponent-simple-info-addons.js"></script>
+
+  <link rel="import" href="https://unpkg.com/syntax-highlight@1.0.0/syntax-highlight.html">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/1.0.22/webcomponents-lite.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/@smarthtmlelements/smart-core@1.1.0/source/styles/smart.base.css" type="text/css">
+  <link rel="stylesheet" href="https://unpkg.com/@smarthtmlelements/smart-core@1.1.0/source/styles/smart.material-dark.css" type="text/css">
+  <script type="text/javascript" src="https://unpkg.com/@smarthtmlelements/smart-core@1.1.0/source/smart.element.js"></script>
+  <script type="text/javascript" src="https://unpkg.com/@smarthtmlelements/smart-core@1.1.0/source/smart.elements.js"></script>
+
+  <style>
+    html, body {
+      margin:0;
+      padding:0;
+      background-color:#eee;
+      font-family: 'Open Sans', sans-serif;
+      height:100%;
+    }
+    .container {
+      margin:0 auto;
+      width:512px;
+      height:100%;
+    }
+    .container smart-tabs {
+      width:100%;
+      height:100%;
+    }
+    .tab-content {
+      padding:12px;
+    }
+    syntax-highlight {
+      font-size:11px;
+      width:100%;
+      overflow:unset;
+    }
+  </style>
 </head>
-<body> <div class="container"> <smart-tabs class="material-dark"> <smart-tab-item label="Simple paragraph" selected=""> <div class="tab-content"> <simple-paragraph header="Título" message="Apresúrate!" mode="info"></simple-paragraph> <syntax-highlight theme="monokai" lang="html">
+<body>
+
+  <div class="container">
+    <smart-tabs class="material-dark">
+      <smart-tab-item label="Simple paragraph" selected="">
+        <div class="tab-content">
+          <simple-paragraph header="Título" message="Apresúrate!" mode="info"></simple-paragraph>
+          <syntax-highlight theme="monokai" lang="html">
 <template>
   <simple-paragraph header="Título" message="Apresúrate!" mode="info"></simple-paragraph>
-</template> </syntax-highlight> <simple-paragraph message="Apresúrate!" mode="success" width="auto"></simple-paragraph> <syntax-highlight theme="monokai" lang="html">
+</template>
+          </syntax-highlight>
+
+          <simple-paragraph message="Apresúrate!" mode="success" width="auto"></simple-paragraph>
+          <syntax-highlight theme="monokai" lang="html">
 <template>
   <simple-paragraph message="Apresúrate!" mode="success" width="auto"></simple-paragraph>
-</template> </syntax-highlight> <simple-paragraph header="Título" message="Apresúrate!" mode="dark" width="100%"></simple-paragraph> <syntax-highlight theme="monokai" lang="html">
+</template>
+          </syntax-highlight>
+
+          <simple-paragraph header="Título" message="Apresúrate!" mode="dark" width="100%"></simple-paragraph>
+          <syntax-highlight theme="monokai" lang="html">
 <template>
   <simple-paragraph header="Título" message="Apresúrate!" mode="dark" width="100%"></simple-paragraph>
-</template> </syntax-highlight> <simple-paragraph message="Apresúrate!" mode="warning" width="412px"></simple-paragraph> <syntax-highlight theme="monokai" lang="html">
+</template>
+          </syntax-highlight>
+
+          <simple-paragraph message="Apresúrate!" mode="warning" width="412px"></simple-paragraph>
+          <syntax-highlight theme="monokai" lang="html">
 <template>
   <simple-paragraph message="Apresúrate!" mode="warning" width="412px"></simple-paragraph>
-</template> </syntax-highlight> <simple-paragraph header="Título" message="Apresúrate!" mode="danger"></simple-paragraph> <syntax-highlight theme="monokai" lang="html">
+</template>
+          </syntax-highlight>
+
+          <simple-paragraph header="Título" message="Apresúrate!" mode="danger"></simple-paragraph>
+          <syntax-highlight theme="monokai" lang="html">
 <template>
   <simple-paragraph header="Título" message="Apresúrate!" mode="danger"></simple-paragraph>
-</template> </syntax-highlight> </div> </smart-tab-item> <smart-tab-item label="Simple box"> </smart-tab-item> </smart-tabs> </div> </body></html>
+</template>
+          </syntax-highlight>
+        </div>
+      </smart-tab-item>
+      <smart-tab-item label="Simple box">
+
+      </smart-tab-item>
+    </smart-tabs>
+  </div>
+
+
+  <script>
+    if ('serviceWorker' in navigator && location.protocol !== 'file:') {
+      // auto-unregister service worker during dev mode
+      navigator.serviceWorker.getRegistration().then(function(registration) {
+        if (registration) {
+          registration.unregister().then(function() { location.reload(true) });
+        }
+      });
+    }
+  </script>
+
+
+
+</body></html>

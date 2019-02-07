@@ -2,7 +2,7 @@ import { Component, Prop } from '@stencil/core'
 
 @Component({
   tag: 'simple-paragraph',
-  styleUrl: 'simple-paragraph.css',
+  styleUrl: 'simple-paragraph.scss',
   shadow: false
 })
 export class SimpleParagraph {
