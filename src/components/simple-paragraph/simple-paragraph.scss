@@ -20,16 +20,45 @@ simple-paragraph {
         color:rgb(102, 102, 102);
     }
 }
-
-simple-paragraph.type-paragraph h6 {
-    font-size:14px;
-    font-weight:bold;
+simple-paragraph.text-center {
+    text-align:center;
 }
-simple-paragraph.type-paragraph p {
-    font-size:12px;
+
+/*
+ * Type paragraph
+ * */
+ simple-paragraph.type-paragraph {
+    h6 {
+        font-size:14px;
+        font-weight:bold;
+    }
+    p {
+        font-size:12px;
+    }
 }
 simple-paragraph.type-paragraph.mode-info { border-left:6px rgb(65, 163, 202) solid; }
 simple-paragraph.type-paragraph.mode-success { border-left:6px rgb(0, 179, 80) solid; }
 simple-paragraph.type-paragraph.mode-dark { border-left:6px rgb(180, 180, 180) solid; }
 simple-paragraph.type-paragraph.mode-warning { border-left:6px rgb(185, 136, 0) solid; }
 simple-paragraph.type-paragraph.mode-danger { border-left:6px rgb(216, 32, 0) solid; }
+
+/*
+ * Type box
+ * */
+ simple-paragraph.type-box {
+     padding:21px;
+
+    h6 {
+        font-size:14px;
+        font-weight:bold;
+    }
+    p {
+        font-size:14px;
+    }
+}
+simple-paragraph.type-box.mode-* { background-color:rgba(65, 163, 202, 0.1); }
+simple-paragraph.type-box.mode-info { background-color:rgba(65, 163, 202, 0.1); }
+simple-paragraph.type-box.mode-success { background-color:rgba(0, 179, 80, 0.1); }
+simple-paragraph.type-box.mode-dark { background-color:rgba(180, 180, 180, 0.1); }
+simple-paragraph.type-box.mode-warning { background-color:rgba(185, 136, 0, 0.1); }
+simple-paragraph.type-box.mode-danger { background-color:rgba(216, 32, 0, 0.1); }

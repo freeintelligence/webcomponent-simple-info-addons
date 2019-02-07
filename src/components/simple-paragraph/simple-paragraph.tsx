@@ -30,7 +30,7 @@ export class SimpleParagraph {
   /**
    * Center
    */
-  @Prop() center: boolean = false
+  @Prop({ mutable: true }) center: boolean
 
   /**
    * Width
@@ -38,15 +38,32 @@ export class SimpleParagraph {
   @Prop() width: string = '100%'
 
   /**
+   * 
+   */
+  centerOrNot(): boolean {
+    if(typeof this.center == 'undefined') {
+      if(this.type == 'paragraph') {
+        return false
+      }
+      else if(this.type == 'box') {
+        return true
+      }
+    }
+
+    return this.center
+  }
+
+  /**
    * Host data
    */
   hostData() {
     let data = {}
-    
+
     data['class'] = {}
     data['class'][`mode-${this.mode}`] = true
     data['class'][`type-${this.type}`] = true
-    
+    data['class']['text-center'] = this.centerOrNot()
+
     data['style'] = {}
     data['style']['width'] = this.width
 
