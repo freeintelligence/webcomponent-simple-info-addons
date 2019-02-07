@@ -20,7 +20,17 @@ export class SimpleParagraph {
   /**
    * Mode (styles)
    */
-  @Prop() mode: string = 'info'
+  @Prop() mode: string = 'dark'
+
+  /**
+   * Type
+   */
+  @Prop() type: string = 'paragraph'
+
+  /**
+   * Center
+   */
+  @Prop() center: boolean = false
 
   /**
    * Width
@@ -35,6 +45,7 @@ export class SimpleParagraph {
     
     data['class'] = {}
     data['class'][`mode-${this.mode}`] = true
+    data['class'][`type-${this.type}`] = true
     
     data['style'] = {}
     data['style']['width'] = this.width

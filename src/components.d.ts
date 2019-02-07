@@ -14,6 +14,10 @@ export namespace Components {
 
   interface SimpleParagraph {
     /**
+    * Center
+    */
+    'center': boolean;
+    /**
     * Header for the component
     */
     'header': string;
@@ -26,11 +30,19 @@ export namespace Components {
     */
     'mode': string;
     /**
+    * Type
+    */
+    'type': string;
+    /**
     * Width
     */
     'width': string;
   }
   interface SimpleParagraphAttributes extends StencilHTMLAttributes {
+    /**
+    * Center
+    */
+    'center'?: boolean;
     /**
     * Header for the component
     */
@@ -43,6 +55,10 @@ export namespace Components {
     * Mode (styles)
     */
     'mode'?: string;
+    /**
+    * Type
+    */
+    'type'?: string;
     /**
     * Width
     */
