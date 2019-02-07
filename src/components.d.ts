@@ -8,11 +8,18 @@
 import '@stencil/core';
 
 
+import {
+  ButtonInterface,
+} from './components/simple-paragraph/button.interface';
 
 
 export namespace Components {
 
-  interface SimpleParagraph {
+  interface SimpleParagraph2 {
+    /**
+    * Buttons
+    */
+    'buttons': ButtonInterface[];
     /**
     * Center
     */
@@ -38,7 +45,11 @@ export namespace Components {
     */
     'width': string;
   }
-  interface SimpleParagraphAttributes extends StencilHTMLAttributes {
+  interface SimpleParagraph2Attributes extends StencilHTMLAttributes {
+    /**
+    * Buttons
+    */
+    'buttons'?: ButtonInterface[];
     /**
     * Center
     */
@@ -68,26 +79,26 @@ export namespace Components {
 
 declare global {
   interface StencilElementInterfaces {
-    'SimpleParagraph': Components.SimpleParagraph;
+    'SimpleParagraph2': Components.SimpleParagraph2;
   }
 
   interface StencilIntrinsicElements {
-    'simple-paragraph': Components.SimpleParagraphAttributes;
+    'simple-paragraph2': Components.SimpleParagraph2Attributes;
   }
 
 
-  interface HTMLSimpleParagraphElement extends Components.SimpleParagraph, HTMLStencilElement {}
-  var HTMLSimpleParagraphElement: {
-    prototype: HTMLSimpleParagraphElement;
-    new (): HTMLSimpleParagraphElement;
+  interface HTMLSimpleParagraph2Element extends Components.SimpleParagraph2, HTMLStencilElement {}
+  var HTMLSimpleParagraph2Element: {
+    prototype: HTMLSimpleParagraph2Element;
+    new (): HTMLSimpleParagraph2Element;
   };
 
   interface HTMLElementTagNameMap {
-    'simple-paragraph': HTMLSimpleParagraphElement
+    'simple-paragraph2': HTMLSimpleParagraph2Element
   }
 
   interface ElementTagNameMap {
-    'simple-paragraph': HTMLSimpleParagraphElement;
+    'simple-paragraph2': HTMLSimpleParagraph2Element;
   }
 
 
