@@ -3,7 +3,7 @@ import { Component, Prop } from '@stencil/core'
 import { ButtonInterface } from './button.interface'
 
 @Component({
-  tag: 'simple-paragraph2',
+  tag: 'simple-paragraph',
   styleUrl: 'simple-paragraph.scss',
   shadow: false,
 })
@@ -84,8 +84,11 @@ export class SimpleParagraph {
     console.log(this.buttons)
     return (
       <div>
-        {this.header ? <h6>{this.header}</h6> : undefined}
-        <p>{this.message}</p>
+        <div>
+          {this.header ? <h6>{this.header}</h6> : undefined}
+          <p>{this.message}</p>
+        </div>
+        <slot />
       </div>
     )
   }

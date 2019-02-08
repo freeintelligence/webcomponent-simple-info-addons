@@ -15,7 +15,7 @@ import {
 
 export namespace Components {
 
-  interface SimpleParagraph2 {
+  interface SimpleParagraph {
     /**
     * Buttons
     */
@@ -45,7 +45,7 @@ export namespace Components {
     */
     'width': string;
   }
-  interface SimpleParagraph2Attributes extends StencilHTMLAttributes {
+  interface SimpleParagraphAttributes extends StencilHTMLAttributes {
     /**
     * Buttons
     */
@@ -79,26 +79,26 @@ export namespace Components {
 
 declare global {
   interface StencilElementInterfaces {
-    'SimpleParagraph2': Components.SimpleParagraph2;
+    'SimpleParagraph': Components.SimpleParagraph;
   }
 
   interface StencilIntrinsicElements {
-    'simple-paragraph2': Components.SimpleParagraph2Attributes;
+    'simple-paragraph': Components.SimpleParagraphAttributes;
   }
 
 
-  interface HTMLSimpleParagraph2Element extends Components.SimpleParagraph2, HTMLStencilElement {}
-  var HTMLSimpleParagraph2Element: {
-    prototype: HTMLSimpleParagraph2Element;
-    new (): HTMLSimpleParagraph2Element;
+  interface HTMLSimpleParagraphElement extends Components.SimpleParagraph, HTMLStencilElement {}
+  var HTMLSimpleParagraphElement: {
+    prototype: HTMLSimpleParagraphElement;
+    new (): HTMLSimpleParagraphElement;
   };
 
   interface HTMLElementTagNameMap {
-    'simple-paragraph2': HTMLSimpleParagraph2Element
+    'simple-paragraph': HTMLSimpleParagraphElement
   }
 
   interface ElementTagNameMap {
-    'simple-paragraph2': HTMLSimpleParagraph2Element;
+    'simple-paragraph': HTMLSimpleParagraphElement;
   }
 
 
