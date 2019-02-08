@@ -8,18 +8,11 @@
 import '@stencil/core';
 
 
-import {
-  ButtonInterface,
-} from './components/simple-paragraph/button.interface';
 
 
 export namespace Components {
 
   interface SimpleParagraph {
-    /**
-    * Buttons
-    */
-    'buttons': ButtonInterface[];
     /**
     * Center
     */
@@ -46,10 +39,6 @@ export namespace Components {
     'width': string;
   }
   interface SimpleParagraphAttributes extends StencilHTMLAttributes {
-    /**
-    * Buttons
-    */
-    'buttons'?: ButtonInterface[];
     /**
     * Center
     */

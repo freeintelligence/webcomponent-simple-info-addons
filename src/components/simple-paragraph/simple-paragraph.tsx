@@ -1,7 +1,5 @@
 import { Component, Prop } from '@stencil/core'
 
-import { ButtonInterface } from './button.interface'
-
 @Component({
   tag: 'simple-paragraph',
   styleUrl: 'simple-paragraph.scss',
@@ -32,17 +30,12 @@ export class SimpleParagraph {
   /**
    * Center
    */
-  @Prop({ mutable: true }) center: boolean
+  @Prop() center: boolean
 
   /**
    * Width
    */
   @Prop() width: string = '100%'
-
-  /**
-   * Buttons
-   */
-  @Prop() buttons: ButtonInterface[] = []
 
   /**
    * 
@@ -81,7 +74,6 @@ export class SimpleParagraph {
    * Html
    */
   render() {
-    console.log(this.buttons)
     return (
       <div>
         <div>
