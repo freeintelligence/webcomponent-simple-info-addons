@@ -1,10 +1,17 @@
 {
   "name": "webcomponent-simple-info-addons",
-  "version": "0.1.0",
-  "description": "Stencil Component Starter",
+  "version": "0.3.0",
+  "description": "Web components to show simple messages.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/freeintelligence/webcomponent-simple-info-addons.git"
+  },
+  "contributors": [
+    "freeintelligence"
+  ],
   "module": "dist/esm/index.js",
   "main": "dist/index.js",
-  "unpkg": "dist/ionic.js",
+  "unpkg": "dist/index.js",
   "types": "dist/types/components.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "files": [
