@@ -1,0 +1,14 @@
+{
+  "namespace": "WebcomponentSimpleInfoAddons",
+  "fsNamespace": "webcomponent-simple-info-addons",
+  "loader": "../webcomponent-simple-info-addons.js",
+  "core": "webcomponent-simple-info-addons.8otkqcce.js",
+  "corePolyfilled": "webcomponent-simple-info-addons.kmduknav.js",
+  "components": {
+    "simple-paragraph": {
+      "bundleIds": {
+        "$": "acxx0qku"
+      }
+    }
+  }
+}

@@ -11,11 +11,11 @@ export const config: Config = {
       type: 'www',
       serviceWorker: null // disable service workers
     },
-    /*{
+    {
       type: 'www',
       dir: 'docs',
       baseUrl: '/webcomponent-simple-info-addons',
       serviceWorker: null // disable service workers
-    },*/
+    },
   ]
 };
