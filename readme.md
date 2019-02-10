@@ -6,7 +6,7 @@ Simple web components to show information in a simple and beautiful way.
 
 ## Content table
  - [Demo](https://freeintelligence.github.io/webcomponent-simple-info-addons/)
- - [Installation](#installation)
+ - [Use and installation](#use-and-installation)
 	 - [npm](#npm)
 	 - [unpkg](#unpkg)
 	 - [framework integration](https://stenciljs.com/docs/overview)
@@ -14,3 +14,57 @@ Simple web components to show information in a simple and beautiful way.
 	 - [simple-paragraph](#simple-paragraph)
  - [Browser Support](https://stenciljs.com/docs/browser-support)
 
+## Use and installation
+To use these web components, you must install their dependencies:
+### npm
+```js
+npm install webcomponent-simple-info-addons
+```
+```html
+<script src="node_modules/webcomponent-simple-info-addons/dist/webcomponent-simple-info-addons.js"></script>
+```
+### unpkg
+```html
+<script src="https://unpkg.com/webcomponent-simple-info-addons/dist/webcomponent-simple-info-addons.js"></script>
+```
+### framework integration
+[See the official documentation of stenciljs.com](https://stenciljs.com/docs/overview)
+
+## Components
+List of components in the package.
+### simple-paragraph
+**Simple use:**
+```html
+<simple-paragraph header="Title" message="Simple message to show"></simple-paragraph>
+```
+**API**
+| Property | Attribute | Description | Type | Default |
+| --------- | --------- | ------------------------- | --------- | ------------- |
+| `header` | `header` | Title (or header) | `string` | `undefined` |
+| `message` | `message` | Message to show | `string` | `undefined` |
+| `mode` | `mode` | Color (or mode) | `string` | `'dark'` |
+| `type` | `type` | The type of paragraph | `string` | `'paragraph'`|
+| `width` | `width` | Width of the paragraph container | `string` | `'100%'`
+| `center` | `center` | `type == 'paragraph' ? 'Text center' : 'Container center'` | `boolean` | `type == 'paragraph' ? false : true` |
+**Available modes**
+```js
+"info"
+"success"
+"dark"
+"warning"
+"danger"
+```
+**Available types**
+```js
+"paragraph"
+"box"
+```
+**Custom modes and types:** to add or modify the modes and types you must create global css styles, for example, to create a new `mode` or `color` called `primary` you must add a `css` like:
+```css
+simple-paragraph.type-paragraph.mode-primary {
+    border-left:6px #387ef5 solid;
+}
+```
+
+## Browser Support
+[See the official documentation of stenciljs.com](https://stenciljs.com/docs/browser-support)
