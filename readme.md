@@ -32,12 +32,16 @@ npm install webcomponent-simple-info-addons
 
 ## Components
 List of components in the package.
+
 ### simple-paragraph
+
 **Simple use:**
 ```html
 <simple-paragraph header="Title" message="Simple message to show"></simple-paragraph>
 ```
+
 **API**
+
 | Property | Attribute | Description | Type | Default |
 | --------- | --------- | ------------------------- | --------- | ------------- |
 | `header` | `header` | Title (or header) | `string` | `undefined` |
@@ -46,7 +50,9 @@ List of components in the package.
 | `type` | `type` | The type of paragraph | `string` | `'paragraph'` |
 | `width` | `width` | Width of the paragraph container | `string` | `'100%'` |
 | `center` | `center` | `type == 'paragraph' ? 'Text center' : 'Container center'` | `boolean` | `type == 'paragraph' ? false : true` |
+
 **Available modes**
+
 ```js
 "info"
 "success"
@@ -54,12 +60,16 @@ List of components in the package.
 "warning"
 "danger"
 ```
+
 **Available types**
+
 ```js
 "paragraph"
 "box"
 ```
+
 **Custom modes and types:** to add or modify the modes and types you must create global css styles, for example, to create a new `mode` or `color` called `primary` you must add a `css` like:
+
 ```css
 simple-paragraph.type-paragraph.mode-primary {
     border-left:6px #387ef5 solid;
