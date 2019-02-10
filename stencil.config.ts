@@ -15,7 +15,8 @@ export const config: Config = {
       type: 'www',
       dir: 'docs',
       baseUrl: '/webcomponent-simple-info-addons',
-      serviceWorker: null // disable service workers
+      serviceWorker: null, // disable service workers
+      collapseWhitespace: false,
     },
   ]
 };

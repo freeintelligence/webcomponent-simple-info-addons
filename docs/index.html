@@ -1,3 +1,78 @@
-<!DOCTYPE html><html dir="ltr" lang="en"><head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"> <title>WebComponent simple info addons</title> <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet"> <script data-resources-url="/webcomponent-simple-info-addons/build/webcomponent-simple-info-addons/">!function(e,t,n,o,r,s,i,c,a,d,p,l,u,m){for(p=e[n]=e[n]||{},(l=t.createElement("style")).innerHTML="simple-paragraph{visibility:hidden}.hydrated{visibility:inherit}",l.setAttribute("data-styles",""),u=t.head.querySelector("meta[charset]"),t.head.insertBefore(l,u?u.nextSibling:t.head.firstChild),function(e,t,n){(e["s-apps"]=e["s-apps"]||[]).push("WebcomponentSimpleInfoAddons"),n.componentOnReady||(n.componentOnReady=function(){var t=this;function n(n){if(t.nodeName.indexOf("-")>0){for(var o=e["s-apps"],r=0,s=0;s<o.length;s++)if(e[o[s]].componentOnReady){if(e[o[s]].componentOnReady(t,n))return;r++}if(r<o.length)return void(e["s-cr"]=e["s-cr"]||[]).push([t,n])}n(null)}return e.Promise?new e.Promise(n):{then:n}})}(e,0,d),r=r||p.resourcesUrl,l=(u=t.querySelectorAll("script")).length-1;l>=0&&!(m=u[l]).src&&!m.hasAttribute("data-resources-url");l--);u=m.getAttribute("data-resources-url"),!r&&u&&(r=u),!r&&m.src&&(r=(u=m.src.split("/").slice(0,-1)).join("/")+(u.length?"/":"")+"webcomponent-simple-info-addons/"),l=t.createElement("script"),function(e,t,n,o){return!(t.search.indexOf("core=esm")>0)&&(!(!(t.search.indexOf("core=es5")>0||"file:"===t.protocol)&&e.customElements&&e.customElements.define&&e.fetch&&e.CSS&&e.CSS.supports&&e.CSS.supports("color","var(--c)")&&"noModule"in n)||function(e){try{return new Function('import("")'),!1}catch(e){}return!0}())}(e,e.location,l)?l.src=r+"webcomponent-simple-info-addons.kmduknav.js":(l.src=r+"webcomponent-simple-info-addons.8otkqcce.js",l.setAttribute("type","module"),l.setAttribute("crossorigin",!0)),l.setAttribute("data-resources-url",r),l.setAttribute("data-namespace","webcomponent-simple-info-addons"),t.head.appendChild(l)}(window,document,"WebcomponentSimpleInfoAddons",0,0,0,0,0,0,HTMLElement.prototype);</script> <link rel="import" href="https://unpkg.com/syntax-highlight@1.0.0/syntax-highlight.html"> <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/1.0.22/webcomponents-lite.js"></script> <link rel="stylesheet" href="https://unpkg.com/@smarthtmlelements/smart-core@1.1.0/source/styles/smart.base.css" type="text/css"> <link rel="stylesheet" href="https://unpkg.com/@smarthtmlelements/smart-core@1.1.0/source/styles/smart.material-dark.css" type="text/css"> <script type="text/javascript" src="https://unpkg.com/@smarthtmlelements/smart-core@1.1.0/source/smart.element.js"></script> <script type="text/javascript" src="https://unpkg.com/@smarthtmlelements/smart-core@1.1.0/source/smart.elements.js"></script> <style>body,html{margin:0;padding:0;font-family:Open Sans,sans-serif;height:100%}a{color:inherit}.container{width:100%;height:100%;background-color:#191919}.container h2.title{padding-top:32px;-webkit-box-sizing:border-box;box-sizing:border-box}.container h2.title,.container h4.documentation{margin:0;width:100%;color:#fff;text-align:center}.container h4.documentation{padding-bottom:32px}.container h4.subtitle{margin:0;padding:0}.container smart-tabs{width:100%}.tab-content{width:712px;padding:12px;margin:0 auto;background-color:#fff}syntax-highlight{font-size:11px;width:100%;text-align:left;overflow:unset}</style>
+<!DOCTYPE html><html dir="ltr" lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <title>WebComponent simple info addons</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+
+  <script data-resources-url="/webcomponent-simple-info-addons/build/webcomponent-simple-info-addons/">!function(e,t,n,o,r,s,i,c,a,d,p,l,u,m){for(p=e[n]=e[n]||{},(l=t.createElement("style")).innerHTML="simple-paragraph{visibility:hidden}.hydrated{visibility:inherit}",l.setAttribute("data-styles",""),u=t.head.querySelector("meta[charset]"),t.head.insertBefore(l,u?u.nextSibling:t.head.firstChild),function(e,t,n){(e["s-apps"]=e["s-apps"]||[]).push("WebcomponentSimpleInfoAddons"),n.componentOnReady||(n.componentOnReady=function(){var t=this;function n(n){if(t.nodeName.indexOf("-")>0){for(var o=e["s-apps"],r=0,s=0;s<o.length;s++)if(e[o[s]].componentOnReady){if(e[o[s]].componentOnReady(t,n))return;r++}if(r<o.length)return void(e["s-cr"]=e["s-cr"]||[]).push([t,n])}n(null)}return e.Promise?new e.Promise(n):{then:n}})}(e,0,d),r=r||p.resourcesUrl,l=(u=t.querySelectorAll("script")).length-1;l>=0&&!(m=u[l]).src&&!m.hasAttribute("data-resources-url");l--);u=m.getAttribute("data-resources-url"),!r&&u&&(r=u),!r&&m.src&&(r=(u=m.src.split("/").slice(0,-1)).join("/")+(u.length?"/":"")+"webcomponent-simple-info-addons/"),l=t.createElement("script"),function(e,t,n,o){return!(t.search.indexOf("core=esm")>0)&&(!(!(t.search.indexOf("core=es5")>0||"file:"===t.protocol)&&e.customElements&&e.customElements.define&&e.fetch&&e.CSS&&e.CSS.supports&&e.CSS.supports("color","var(--c)")&&"noModule"in n)||function(e){try{return new Function('import("")'),!1}catch(e){}return!0}())}(e,e.location,l)?l.src=r+"webcomponent-simple-info-addons.kmduknav.js":(l.src=r+"webcomponent-simple-info-addons.8otkqcce.js",l.setAttribute("type","module"),l.setAttribute("crossorigin",!0)),l.setAttribute("data-resources-url",r),l.setAttribute("data-namespace","webcomponent-simple-info-addons"),t.head.appendChild(l)}(window,document,"WebcomponentSimpleInfoAddons",0,0,0,0,0,0,HTMLElement.prototype);</script>
+
+  <link rel="import" href="https://unpkg.com/syntax-highlight@1.0.0/syntax-highlight.html">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/1.0.22/webcomponents-lite.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/@smarthtmlelements/smart-core@1.1.0/source/styles/smart.base.css" type="text/css">
+  <link rel="stylesheet" href="https://unpkg.com/@smarthtmlelements/smart-core@1.1.0/source/styles/smart.material-dark.css" type="text/css">
+  <script type="text/javascript" src="https://unpkg.com/@smarthtmlelements/smart-core@1.1.0/source/smart.element.js"></script>
+  <script type="text/javascript" src="https://unpkg.com/@smarthtmlelements/smart-core@1.1.0/source/smart.elements.js"></script>
+
+  <style>body,html{margin:0;padding:0;font-family:Open Sans,sans-serif;height:100%}a{color:inherit}.container{width:100%;height:100%;background-color:#191919}.container h2.title{padding-top:32px;-webkit-box-sizing:border-box;box-sizing:border-box}.container h2.title,.container h4.documentation{margin:0;width:100%;color:#fff;text-align:center}.container h4.documentation{padding-bottom:32px}.container h4.subtitle{margin:0;padding:0}.container smart-tabs{width:100%}.tab-content{width:712px;padding:12px;margin:0 auto;background-color:#fff}syntax-highlight{font-size:11px;width:100%;text-align:left;overflow:unset}</style>
 </head>
-<body> <div class="container"> <h2 class="title">WebComponent simple info addons</h2> <h4 class="documentation"><a href="https://github.com/freeintelligence/webcomponent-simple-info-addons#use-and-installation">Documentation</a></h4> <smart-tabs class="material-dark"> <smart-tab-item label="Simple paragraph" selected=""> <div class="tab-content"> <!-- Example #1 --> <h4 class="subtitle">Example #1</h4> <simple-paragraph header="Título" message="Apresúrate!" mode="dark" type="box" width="auto"></simple-paragraph> <syntax-highlight theme="monokai" lang="html"> <simple-paragraph header="Título" message="Apresúrate!" mode="dark" type="box" width="auto"></simple-paragraph> </syntax-highlight> <!-- Example #2 --> <h4 class="subtitle">Example #2</h4> <simple-paragraph message="Apresúrate!" mode="success" width="auto"></simple-paragraph> <syntax-highlight theme="monokai" lang="html"> <simple-paragraph message="Apresúrate!" mode="success" width="auto"></simple-paragraph> </syntax-highlight> <!-- Example #3 --> <h4 class="subtitle">Example #3</h4> <simple-paragraph header="Título" message="Apresúrate!" mode="dark" width="100%"> <simple-paragraph-actions> <button type="button">Cerrar</button> </simple-paragraph-actions> </simple-paragraph> <syntax-highlight theme="monokai" lang="html"> <simple-paragraph header="Título" message="Apresúrate!" mode="dark" width="100%"> <simple-paragraph-actions> <button type="button">Cerrar</button> </simple-paragraph-actions> </simple-paragraph> </syntax-highlight> <!-- Example #4 --> <h4 class="subtitle">Example #4</h4> <simple-paragraph message="Apresúrate!" mode="warning" width="412px"></simple-paragraph> <syntax-highlight theme="monokai" lang="html"> <simple-paragraph message="Apresúrate!" mode="warning" width="412px"></simple-paragraph> </syntax-highlight> <!-- Example #5 --> <h4 class="subtitle">Example #5</h4> <simple-paragraph header="Título" message="Apresúrate!" mode="danger"></simple-paragraph> <syntax-highlight theme="monokai" lang="html"> <simple-paragraph header="Título" message="Apresúrate!" mode="danger"></simple-paragraph> </syntax-highlight> </div> </smart-tab-item> </smart-tabs> </div> <script>var title=document.querySelector(".container h2.title"),documentation=document.querySelector(".container h4.documentation"),smart_tabs=document.querySelector("smart-tabs"),calc=title.clientHeight+documentation.clientHeight;smart_tabs.style.height="calc(100% - "+calc+"px)";</script> </body></html>
+<body>
+
+  <div class="container">
+    <h2 class="title">WebComponent simple info addons</h2>
+    <h4 class="documentation"><a href="https://github.com/freeintelligence/webcomponent-simple-info-addons#use-and-installation">Documentation</a></h4>
+    <smart-tabs class="material-dark">
+      <smart-tab-item label="Simple paragraph" selected="">
+        <div class="tab-content">
+
+          <!-- Example #1 -->
+          <h4 class="subtitle">Example #1</h4>
+          <simple-paragraph header="Título" message="Apresúrate!" mode="dark" type="box" width="auto"></simple-paragraph>
+          <syntax-highlight theme="monokai" lang="html">
+  <simple-paragraph header="Título" message="Apresúrate!" mode="dark" type="box" width="auto"></simple-paragraph>
+          </syntax-highlight>
+
+          <!-- Example #2 -->
+          <h4 class="subtitle">Example #2</h4>
+          <simple-paragraph message="Apresúrate!" mode="success" width="auto"></simple-paragraph>
+          <syntax-highlight theme="monokai" lang="html">
+  <simple-paragraph message="Apresúrate!" mode="success" width="auto"></simple-paragraph>
+          </syntax-highlight>
+
+          <!-- Example #3 -->
+          <h4 class="subtitle">Example #3</h4>
+          <simple-paragraph header="Título" message="Apresúrate!" mode="dark" width="100%">
+            <simple-paragraph-actions>
+              <button type="button">Cerrar</button>
+            </simple-paragraph-actions>
+          </simple-paragraph>
+          <syntax-highlight theme="monokai" lang="html">
+  <simple-paragraph header="Título" message="Apresúrate!" mode="dark" width="100%">
+    <simple-paragraph-actions>
+      <button type="button">Cerrar</button>
+    </simple-paragraph-actions>
+  </simple-paragraph>
+          </syntax-highlight>
+
+          <!-- Example #4 -->
+          <h4 class="subtitle">Example #4</h4>
+          <simple-paragraph message="Apresúrate!" mode="warning" width="412px"></simple-paragraph>
+          <syntax-highlight theme="monokai" lang="html">
+  <simple-paragraph message="Apresúrate!" mode="warning" width="412px"></simple-paragraph>
+          </syntax-highlight>
+
+          <!-- Example #5 -->
+          <h4 class="subtitle">Example #5</h4>
+          <simple-paragraph header="Título" message="Apresúrate!" mode="danger"></simple-paragraph>
+          <syntax-highlight theme="monokai" lang="html">
+  <simple-paragraph header="Título" message="Apresúrate!" mode="danger"></simple-paragraph>
+          </syntax-highlight>
+
+        </div>
+      </smart-tab-item>
+    </smart-tabs>
+  </div>
+
+  <script>var title=document.querySelector(".container h2.title"),documentation=document.querySelector(".container h4.documentation"),smart_tabs=document.querySelector("smart-tabs"),calc=title.clientHeight+documentation.clientHeight;smart_tabs.style.height="calc(100% - "+calc+"px)";</script>
+
+
+</body></html>
