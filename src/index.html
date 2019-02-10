@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
-  <title>Stencil Component Starter</title>
+  <title>WebComponent simple info addons</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
 
   <script src="/build/webcomponent-simple-info-addons.js"></script>
@@ -19,25 +19,49 @@
     html, body {
       margin:0;
       padding:0;
-      background-color:#eee;
       font-family: 'Open Sans', sans-serif;
       height:100%;
     }
+    a {
+      color:inherit;
+    }
     .container {
-      margin:0 auto;
-      width:512px;
+      width:100%;
       height:100%;
+      background-color:#191919;
+    }
+    .container h2.title {
+      margin:0;
+      padding-top:32px;
+      width:100%;
+      box-sizing:border-box;
+      color:white;
+      text-align:center;
+    }
+    .container h4.documentation {
+      margin:0;
+      padding-bottom:32px;
+      width:100%;
+      color:white;
+      text-align:center;
+    }
+    .container h4.subtitle {
+      margin:0;
+      padding:0;
     }
     .container smart-tabs {
       width:100%;
-      height:100%;
     }
     .tab-content {
+      width:712px;
       padding:12px;
+      margin:0 auto;
+      background-color:white;
     }
     syntax-highlight {
       font-size:11px;
       width:100%;
+      text-align:left;
       overflow:unset;
     }
   </style>
@@ -45,58 +69,68 @@
 <body>
 
   <div class="container">
+    <h2 class="title">WebComponent simple info addons</h2>
+    <h4 class="documentation"><a href="https://github.com/freeintelligence/webcomponent-simple-info-addons#use-and-installation">Documentation</a></h4>
     <smart-tabs class="material-dark">
       <smart-tab-item label="Simple paragraph" selected>
         <div class="tab-content">
+
+          <!-- Example #1 -->
+          <h4 class="subtitle">Example #1</h4>
           <simple-paragraph header="Título" message="Apresúrate!" mode="dark" type="box" width="auto"></simple-paragraph>
           <syntax-highlight theme="monokai" lang="html">
-<template>
-  <simple-paragraph header="Título" message="Apresúrate!" mode="info"></simple-paragraph>
-</template>
+  <simple-paragraph header="Título" message="Apresúrate!" mode="dark" type="box" width="auto"></simple-paragraph>
           </syntax-highlight>
 
+          <!-- Example #2 -->
+          <h4 class="subtitle">Example #2</h4>
           <simple-paragraph message="Apresúrate!" mode="success" width="auto"></simple-paragraph>
           <syntax-highlight theme="monokai" lang="html">
-<template>
   <simple-paragraph message="Apresúrate!" mode="success" width="auto"></simple-paragraph>
-</template>
           </syntax-highlight>
 
-          <simple-paragraph header="Título" message="Apresúrate hola soy irvin me escuchas? hay un tipo aqui que se esta llevando!" mode="dark" width="100%">
+          <!-- Example #3 -->
+          <h4 class="subtitle">Example #3</h4>
+          <simple-paragraph header="Título" message="Apresúrate!" mode="dark" width="100%">
             <simple-paragraph-actions>
               <button type="button">Cerrar</button>
             </simple-paragraph-actions>
           </simple-paragraph>
           <syntax-highlight theme="monokai" lang="html">
-<template>
-  <simple-paragraph header="Título" message="Apresúrate hola soy irvin me escuchas? hay un tipo aqui que se esta llevando!" mode="dark" width="100%">
+  <simple-paragraph header="Título" message="Apresúrate!" mode="dark" width="100%">
     <simple-paragraph-actions>
       <button type="button">Cerrar</button>
     </simple-paragraph-actions>
   </simple-paragraph>
-</template>
           </syntax-highlight>
 
+          <!-- Example #4 -->
+          <h4 class="subtitle">Example #4</h4>
           <simple-paragraph message="Apresúrate!" mode="warning" width="412px"></simple-paragraph>
           <syntax-highlight theme="monokai" lang="html">
-<template>
   <simple-paragraph message="Apresúrate!" mode="warning" width="412px"></simple-paragraph>
-</template>
           </syntax-highlight>
 
+          <!-- Example #5 -->
+          <h4 class="subtitle">Example #5</h4>
           <simple-paragraph header="Título" message="Apresúrate!" mode="danger"></simple-paragraph>
           <syntax-highlight theme="monokai" lang="html">
-<template>
   <simple-paragraph header="Título" message="Apresúrate!" mode="danger"></simple-paragraph>
-</template>
           </syntax-highlight>
-        </div>
-      </smart-tab-item>
-      <smart-tab-item label="Simple box">
 
+        </div>
       </smart-tab-item>
     </smart-tabs>
   </div>
 
+  <script>
+    var title = document.querySelector('.container h2.title')
+    var documentation = document.querySelector('.container h4.documentation')
+    var smart_tabs = document.querySelector('smart-tabs')
+
+    var calc = title.clientHeight+documentation.clientHeight
+
+    smart_tabs.style.height = 'calc(100% - '+calc+'px)'
+  </script>
 </body>
 </html>

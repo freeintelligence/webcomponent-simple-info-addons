@@ -17,7 +17,7 @@ Simple web components to show information in a simple and beautiful way.
 ## Use and installation
 To use these web components, you must install their dependencies:
 ### npm
-```js
+```bash
 npm install webcomponent-simple-info-addons
 ```
 ```html
@@ -50,6 +50,16 @@ List of components in the package.
 | `type` | `type` | The type of paragraph | `string` | `'paragraph'` |
 | `width` | `width` | Width of the paragraph container | `string` | `'100%'` |
 | `center` | `center` | `type == 'paragraph' ? 'Text center' : 'Container center'` | `boolean` | `type == 'paragraph' ? false : true` |
+
+**With buttons**
+
+```html
+  <simple-paragraph header="Title" message="Simple message to show">
+    <simple-paragraph-actions>
+      <button type="button">Cerrar</button>
+    </simple-paragraph-actions>
+  </simple-paragraph>
+```
 
 **Available modes**
 
