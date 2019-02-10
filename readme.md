@@ -43,8 +43,8 @@ List of components in the package.
 | `header` | `header` | Title (or header) | `string` | `undefined` |
 | `message` | `message` | Message to show | `string` | `undefined` |
 | `mode` | `mode` | Color (or mode) | `string` | `'dark'` |
-| `type` | `type` | The type of paragraph | `string` | `'paragraph'`|
-| `width` | `width` | Width of the paragraph container | `string` | `'100%'`
+| `type` | `type` | The type of paragraph | `string` | `'paragraph'` |
+| `width` | `width` | Width of the paragraph container | `string` | `'100%'` |
 | `center` | `center` | `type == 'paragraph' ? 'Text center' : 'Container center'` | `boolean` | `type == 'paragraph' ? false : true` |
 **Available modes**
 ```js
